@@ -1,0 +1,40 @@
+# --- Gradle ---
+.gradle/
+build/
+out/
+!gradle/wrapper/gradle-wrapper.jar
+
+# --- IDE ---
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.classpath
+.project
+.settings/
+bin/
+
+# --- Системные файлы ---
+.DS_Store
+Thumbs.db
+
+# --- Логи и кэши ---
+*.log
+*.swp
+*.bak
+~$*
+
+# --- Результаты сборки ---
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+
+# --- Профили запуска ---
+runConfigurations/
+
+# --- Тестовые данные ---
+tmp/
+temp/
