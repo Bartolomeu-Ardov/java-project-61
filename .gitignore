@@ -1,40 +1,43 @@
-# --- Gradle ---
-.gradle/
-build/
-out/
-!gradle/wrapper/gradle-wrapper.jar
+.gradle
+../build/
+!app/gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-# --- IDE ---
-.idea/
+### IntelliJ IDEA ###
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
 *.iml
 *.ipr
-*.iws
-.vscode/
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### Eclipse ###
+.apt_generated
 .classpath
+.factorypath
 .project
-.settings/
+.settings
+.springBeans
+.sts4-cache
 bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
 
-# --- Системные файлы ---
-.DS_Store
-Thumbs.db
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
 
-# --- Логи и кэши ---
-*.log
-*.swp
-*.bak
-~$*
+### VS Code ###
+.vscode/
 
-# --- Результаты сборки ---
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-
-# --- Профили запуска ---
-runConfigurations/
-
-# --- Тестовые данные ---
-tmp/
-temp/
+### Mac OS ###
+.DS_Store*.Zone.Identifier
+*.Zone.Identifier
