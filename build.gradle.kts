@@ -8,7 +8,7 @@ plugins {
 
 checkstyle {
     toolVersion = "10.12.4"
-    config = resources.text.fromFile("sun_checks.xml")
+    config = resources.text.fromFile("config/checkstyle/sun_checks.xml")
     isIgnoreFailures = false
     configProperties = mapOf("org.checkstyle.xsl" to "false")
 }
@@ -51,5 +51,9 @@ sonar {
         property("sonar.projectKey", "Bartolomeu-Ardov_java-project-61")
         property("sonar.organization", "bartolomeu-ardov")
         property("sonar.host.url", "https://sonarcloud.io")
+        property("sonar.java.checkstyle.reportPaths", "build/reports/checkstyle/main.xml")
+        property("sonar.language", "java")
+        property("sonar.sourceEncoding", "UTF-8")
+        property("sonar.java.binaries", "build/classes/java/main")
     }
 }

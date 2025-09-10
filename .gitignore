@@ -58,6 +58,5 @@ Zone.Identifier
 build/
 .gradle/
 .idea/checkstyleidea-libs/
-.idea/
 *.class
 *.jar
