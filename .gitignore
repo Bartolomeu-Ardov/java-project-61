@@ -9,6 +9,8 @@
 .idea/jarRepositories.xml
 .idea/compiler.xml
 .idea/libraries/
+.idea/checkstyle-idea.xml
+.idea/vcs.xml
 *.iws
 *.iml
 *.ipr
@@ -42,8 +44,4 @@ bin/
 .DS_Store*.Zone.Identifier
 *.Zone.Identifier
 
-### Checkstyle ###
-.idea/checkstyle-idea.xml
-.idea/vcs.xml
-*.xml:Zone.Identifier
-Zone.Identifier
+
