@@ -53,3 +53,9 @@ Zone.Identifier
 # Windows Zone.Identifier metadata files
 *:Zone.Identifier
 Zone.Identifier
+
+# Build outputs
+build/
+.gradle/
+.idea/checkstyleidea-libs/
+.idea/

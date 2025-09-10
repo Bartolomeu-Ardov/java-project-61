@@ -2,14 +2,15 @@ plugins {
     id("application")
     id("java")
     id("com.github.ben-manes.versions") version "0.51.0"
-    id("org.sonarqube") version "6.2.0.5505"
-    checkstyle
+    id("org.sonarqube") version "5.0.0.4638"
+    id("checkstyle")
 }
 
 checkstyle {
-    toolVersion = "10.12.5"
+    toolVersion = "10.12.4"
     config = resources.text.fromFile("sun_checks.xml")
     isIgnoreFailures = false
+    configProperties = mapOf("org.checkstyle.xsl" to "false")
 }
 
 application {
@@ -28,6 +29,14 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter")
 }
 
+tasks.withType<Checkstyle>().configureEach {
+    reports {
+        xml.required.set(false)
+        html.required.set(true)
+        html.outputLocation.set(layout.buildDirectory.file("reports/checkstyle.html"))
+    }
+}
+
 tasks.test {
     useJUnitPlatform()
 
@@ -35,14 +44,6 @@ tasks.test {
 
 tasks.getByName("run", JavaExec::class) {
     standardInput = System.`in`
-}
-
-tasks.withType<Checkstyle>().configureEach {
-    reports {
-        xml.required = false
-        html.required = true
-        html.stylesheet = resources.text.fromFile("config/xsl/checkstyle-custom.xsl")
-    }
 }
 
 sonar {
