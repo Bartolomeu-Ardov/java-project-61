@@ -3,6 +3,13 @@ plugins {
     id("java")
     id("com.github.ben-manes.versions") version "0.51.0"
     id("org.sonarqube") version "6.2.0.5505"
+    checkstyle
+}
+
+checkstyle {
+    toolVersion = "10.12.5"
+    config = resources.text.fromFile("sun_checks.xml")
+    isIgnoreFailures = false
 }
 
 application {
@@ -28,6 +35,14 @@ tasks.test {
 
 tasks.getByName("run", JavaExec::class) {
     standardInput = System.`in`
+}
+
+tasks.withType<Checkstyle>().configureEach {
+    reports {
+        xml.required = false
+        html.required = true
+        html.stylesheet = resources.text.fromFile("config/xsl/checkstyle-custom.xsl")
+    }
 }
 
 sonar {
