@@ -49,3 +49,7 @@ bin/
 *:Zone.Identifier
 Zone.Identifier
 .Zone.Identifier
+
+# Windows Zone.Identifier metadata files
+*:Zone.Identifier
+Zone.Identifier
