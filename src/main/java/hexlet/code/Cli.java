@@ -20,6 +20,6 @@ public final class Cli {
         String userName = scanner.nextLine();
 
         System.out.println("Hello, " + userName + "!");
-        scanner.close();
+
     }
 }
