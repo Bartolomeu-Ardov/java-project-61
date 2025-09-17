@@ -10,3 +10,5 @@
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=Bartolomeu-Ardov_java-project-61&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=Bartolomeu-Ardov_java-project-61)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Bartolomeu-Ardov_java-project-61&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=Bartolomeu-Ardov_java-project-61)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=Bartolomeu-Ardov_java-project-61&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=Bartolomeu-Ardov_java-project-61)
+[![Demo Screenshot](images/screen1.png)
+[![Demo Screenshot](images/screen2.png)
