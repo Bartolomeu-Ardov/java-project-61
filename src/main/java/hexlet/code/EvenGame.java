@@ -10,8 +10,7 @@ public final class EvenGame {
     /**
      * Private constructor to prevent instantiation.
      */
-    private EvenGame() {
-    }
+
 
     /**
      * Starts the Even game.

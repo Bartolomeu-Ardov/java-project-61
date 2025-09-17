@@ -7,7 +7,7 @@ import java.util.Scanner;
  * This class serves as the entry point for the application.
  */
 public final class App {
-    private static final Scanner SCANNER = new Scanner(System.in);
+
 
     /**
      * Private constructor to prevent instantiation.
