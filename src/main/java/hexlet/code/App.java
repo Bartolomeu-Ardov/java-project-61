@@ -24,22 +24,29 @@ public final class App {
      * @param args command line arguments passed to the application
      */
     public static void main(final String[] args) {
-        showGameMenu();
+        Scanner scanner = new Scanner(System.in);
+
+        try {
+            showGameMenu(scanner);
+        } finally {
+            scanner.close();
+        }
     }
 
     /**
      * Displays the game menu and handles user selection.
      */
-    private static void showGameMenu() {
+    private static void showGameMenu(Scanner scanner) {
         boolean exit = false;
 
         while (!exit) {
             System.out.println("Please enter the game number and press Enter.");
             System.out.println("1 - Greet");
+            System.out.println("2 - EvenGame");
             System.out.println("0 - Exit");
             System.out.print("Your choice: ");
 
-            int choice = getUserChoice();
+            int choice = getUserChoice(scanner);
 
             switch (choice) {
                 case 0:
@@ -47,9 +54,10 @@ public final class App {
                     System.out.println("Goodbye!");
                     break;
                 case 1:
-                    // Вызываем Cli.greetUser() - он создаст свой Scanner,
-                    // но так как мы убрали scanner.close(), проблем не будет
                     Cli.greetUser();
+                    break;
+                case 2:
+                    EvenGame.start();
                     break;
                 default:
                     System.out.println("Invalid choice. Please try again.");
@@ -67,10 +75,10 @@ public final class App {
      *
      * @return the validated user choice
      */
-    private static int getUserChoice() {
+    private static int getUserChoice(Scanner scanner) {
         while (true) {
             try {
-                String input = SCANNER.nextLine().trim();
+                String input = scanner.nextLine().trim();
                 return Integer.parseInt(input);
             } catch (NumberFormatException e) {
                 System.out.print("Please enter a valid number: ");
