@@ -12,3 +12,5 @@
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=Bartolomeu-Ardov_java-project-61&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=Bartolomeu-Ardov_java-project-61)
 [![Demo Screenshot](images/screen1.png)
 [![Demo Screenshot](images/screen2.png)
+[![Demo Screenshot](images/screen3.png)
+[![Demo Screenshot](images/screen4.png)

@@ -2,9 +2,6 @@ package hexlet.code;
 
 import java.util.Scanner;
 
-/**
- * Game engine that handles all common game logic.
- */
 public class Engine {
     private static final int ROUNDS_COUNT = 3;
 
