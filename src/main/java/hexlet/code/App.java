@@ -2,6 +2,8 @@ package hexlet.code;
 
 import hexlet.code.games.EvenGame;
 import hexlet.code.games.Calc;
+import hexlet.code.games.NOD;
+
 import java.util.Scanner;
 
 public class App {
@@ -27,6 +29,9 @@ public class App {
                 case 3:
                     Calc.start();
                     break;
+                case 4:
+                    NOD.start();
+                    break;
                 default:
                     System.out.println("Invalid choice. Please try again.");
                     break;
@@ -45,6 +50,7 @@ public class App {
         System.out.println("1 - Greet");
         System.out.println("2 - Even");
         System.out.println("3 - Calc");
+        System.out.println("4 - NOD");
         System.out.println("0 - Exit");
         System.out.print("Your choice: ");
     }
