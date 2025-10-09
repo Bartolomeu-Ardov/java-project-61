@@ -3,14 +3,14 @@ package hexlet.code;
 import java.util.Scanner;
 
 public class Engine {
-    private static final int ROUNDS_COUNT = 3;
+    public static final int ROUNDS_COUNT = 3;
 
         /**
          * Runs the game with a question generator.
          * @param gameDescription Description of the game rules
          * @param questionGenerator Function that generates [question, answer] for each round
          */
-        public static void run(String gameDescription,
+        public static void runGame(String gameDescription,
                                java.util.function.Supplier<String[]> questionGenerator) {
             Scanner scanner = new Scanner(System.in);
 

@@ -8,7 +8,7 @@ public class Calc {
     private static final Random RANDOM = new Random();
 
     public static void start() {
-        Engine.run(DESCRIPTION, Calc::generateQuestionAndAnswer);
+        Engine.runGame(DESCRIPTION, Calc::generateQuestionAndAnswer);
     }
 
     private static String[] generateQuestionAndAnswer() {

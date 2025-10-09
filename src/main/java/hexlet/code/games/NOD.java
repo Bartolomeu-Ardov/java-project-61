@@ -9,7 +9,7 @@ public class NOD {
     private static final Random RANDOM = new Random();
 
     public static void start() {
-        Engine.run(DESCRIPTION, NOD::generateQuestionAndAnswer);
+        Engine.runGame(DESCRIPTION, NOD::generateQuestionAndAnswer);
     }
 
     private static String[] generateQuestionAndAnswer() {

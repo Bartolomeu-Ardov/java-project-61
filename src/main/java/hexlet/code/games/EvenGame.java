@@ -8,7 +8,7 @@ public class EvenGame {
     private static final Random RANDOM = new Random();
 
     public static void start() {
-        Engine.run(DESCRIPTION, EvenGame::generateQuestionAndAnswer);
+        Engine.runGame(DESCRIPTION, EvenGame::generateQuestionAndAnswer);
     }
 
     private static String[] generateQuestionAndAnswer() {
