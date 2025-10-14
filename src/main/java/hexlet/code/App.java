@@ -4,6 +4,7 @@ import hexlet.code.games.EvenGame;
 import hexlet.code.games.Calc;
 import hexlet.code.games.NOD;
 import hexlet.code.games.Progression;
+import hexlet.code.games.Prime;
 
 import java.util.Scanner;
 
@@ -36,6 +37,9 @@ public class App {
                 case 5:
                     Progression.start();
                     break;
+                case 6:
+                    Prime.start();
+                    break;
                 default:
                     System.out.println("Invalid choice. Please try again.");
                     break;
@@ -56,6 +60,7 @@ public class App {
         System.out.println("3 - Calc");
         System.out.println("4 - NOD");
         System.out.println("5 - Progression");
+        System.out.println("6 - Prime");
         System.out.println("0 - Exit");
         System.out.print("Your choice: ");
     }
